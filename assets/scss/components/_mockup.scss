@@ -1,0 +1,30 @@
+.mockup-container {
+  justify-self: end;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+
+  &:hover {
+    .website {
+      transform: translateX(-50%);
+      filter: grayscale(0%);
+    }
+  }
+
+  .website {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 75.5%;
+    transition: .2s ease-in-out;
+    filter: grayscale(100%);
+  }
+
+  .mac-container {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}

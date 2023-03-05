@@ -1,0 +1,17 @@
+.button {
+  font-family: $font-montserrat-bold;
+  background-color: $color-main;
+  color: $color-white;
+  display: inline-block;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-main;
+  }
+}

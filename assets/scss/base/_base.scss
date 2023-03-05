@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 0 calc($margin-xl * 2) 0 $margin-xl;
+  font-family: $font-montserrat-regular;
+  @media screen and (min-width : 1920px) {
+    padding: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-roboto-black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,p,span,li {
+  font-family: $font-montserrat-regular;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,18 @@
+
+@mixin screen-m {
+    @media screen and (max-width: 1920px){
+        @content
+    }
+};
+
+@mixin screen-s {
+    @media screen and (max-width: 720px){
+        @content
+    }
+};
+
+@mixin screen-xs {
+    @media screen and (max-width: 540px){
+        @content
+    }
+};

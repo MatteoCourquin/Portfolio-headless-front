@@ -1,0 +1,47 @@
+.links {
+  display: inline-block;
+  position: relative;
+  color: $color-black;
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: $color-main;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a {
+  color: $color-main;
+  font-weight: 600;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    .line {
+      width: 40px;
+    }
+  }
+
+  .line {
+    transition: width 0.2s ease-in-out;
+    width: 20px;
+    height: 2px;
+    background-color: $color-main;
+  }
+}
